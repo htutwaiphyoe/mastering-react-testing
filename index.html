@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Beatly, producing best headphones for listening your favourite musics and podcasts"
+        />
 
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
@@ -32,16 +36,41 @@
 
         <main class="main">
             <!--=============== HOME ===============-->
-            <section class="home section" id="home"></section>
+            <section class="home section" id="home">
+                <nav class="container nav">
+                    <a href="#" class="nav__logo">
+                        <img src="assets/img/logo.png" alt="Beatly logo" />
+                    </a>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="#specs" class="nav__link">Specs</a></li>
+                            <li class="nav__item"><a href="#case" class="nav__link">Case</a></li>
+                            <li class="nav__item">
+                                <a href="#products" class="nav__link">Products</a>
+                            </li>
+                        </ul>
+
+                        <div class="nav__close" id="nav-close">
+                            <i class="ri-close-line"></i>
+                        </div>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-function-line"></i>
+                    </div>
+                </nav>
+            </section>
 
             <!--=============== SPONSOR ===============-->
             <section class="sponsor section"></section>
 
             <!--=============== SPECS ===============-->
-            <section class="specs section grid" id="specs"></section>
+            <section class="grid specs section" id="specs"></section>
 
             <!--=============== CASE ===============-->
-            <section class="case section grid" id="case"></section>
+            <section class="grid case section" id="case"></section>
 
             <!--=============== DISCOUNT ===============-->
             <section class="discount section"></section>
