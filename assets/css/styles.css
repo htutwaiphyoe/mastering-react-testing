@@ -204,6 +204,10 @@ img {
   top: 0;
 }
 
+.scroll-header {
+  background-color: var(--body-color) !important;
+}
+
 .home__img {
   width: 250px;
   position: absolute;

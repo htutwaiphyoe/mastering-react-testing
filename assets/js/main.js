@@ -37,6 +37,13 @@ navLinks.forEach((link) => link.addEventListener("click", hideMenu));
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
+function changeHeaderBackground() {
+    const header = document.getElementById("header");
+    if (window.scrollY > 50) header.classList.add("scroll-header");
+    else header.classList.remove("scroll-header");
+}
+
+window.addEventListener("scroll", changeHeaderBackground);
 /*==================== SHOW SCROLL UP ====================*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
