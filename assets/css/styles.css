@@ -281,4 +281,14 @@ img {
   column-gap: 0.5rem;
 }
 
+.sponsor__container {
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  row-gap: 5rem;
+  justify-items: center;
+  align-items: center;
+}
+.sponsor__img {
+  width: 90px;
+}
+
 /*# sourceMappingURL=styles.css.map */
