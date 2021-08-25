@@ -10,3 +10,19 @@
         }
     }
 }
+
+@mixin radius($amount) {
+    border-radius: $amount;
+    -webkit-border-radius: $amount;
+    -moz-border-radius: $amount;
+    -ms-border-radius: $amount;
+    -o-border-radius: $amount;
+}
+
+@mixin transition($amount) {
+    transition: $amount;
+    -webkit-transition: $amount;
+    -moz-transition: $amount;
+    -ms-transition: $amount;
+    -o-transition: $amount;
+}
