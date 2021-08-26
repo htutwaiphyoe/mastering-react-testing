@@ -7,7 +7,7 @@
         margin-bottom: var(--mb-2-5);
 
         &-gradient {
-            background-color: var(--text-gradient);
+            background: var(--text-gradient);
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
