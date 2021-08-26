@@ -291,4 +291,40 @@ img {
   width: 90px;
 }
 
+.specs__container {
+  position: relative;
+}
+.specs__content {
+  row-gap: 1.5rem;
+}
+.specs__data {
+  display: grid;
+  row-gap: 0.25rem;
+}
+.specs__data:first-child, .specs__data:last-child {
+  margin-left: var(--mb-1-5);
+}
+.specs__icon {
+  font-size: 1.2rem;
+  color: var(--white-color);
+}
+.specs__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.specs__subtitle {
+  font-size: var(--smaller-font-size);
+}
+.specs__img {
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  right: -45%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
 /*# sourceMappingURL=styles.css.map */

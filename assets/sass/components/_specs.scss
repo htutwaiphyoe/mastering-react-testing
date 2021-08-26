@@ -1,0 +1,44 @@
+.specs {
+    &__container {
+        position: relative;
+    }
+
+    &__content {
+        row-gap: 1.5rem;
+    }
+
+    &__data {
+        display: grid;
+        row-gap: 0.25rem;
+
+        &:first-child,
+        &:last-child {
+            margin-left: var(--mb-1-5);
+        }
+    }
+
+    &__icon {
+        font-size: 1.2rem;
+        color: var(--white-color);
+    }
+
+    &__title {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+    &__subtitle {
+        font-size: var(--smaller-font-size);
+    }
+
+    &__img {
+        width: 250px;
+        position: absolute;
+        top: 50%;
+        right: -45%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+}
