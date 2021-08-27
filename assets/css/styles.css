@@ -257,7 +257,7 @@ img {
   display: inline-block;
   background-color: var(--black-color);
   color: var(--white-color);
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -325,6 +325,23 @@ img {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+}
+
+.case__container {
+  position: relative;
+  grid-template-columns: 1fr 1.5fr;
+}
+.case__data {
+  padding: 3rem 0 3rem;
+}
+.case__img {
+  width: 250px;
+  position: absolute;
+  left: -9.5rem;
+}
+.case__description {
+  margin-bottom: var(--mb-1-5);
+  line-height: var(--text-line-height);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,21 @@
+.case {
+    &__container {
+        position: relative;
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    &__data {
+        padding: 3rem 0 3rem;
+    }
+
+    &__img {
+        width: 250px;
+        position: absolute;
+        left: -9.5rem;
+    }
+
+    &__description {
+        margin-bottom: var(--mb-1-5);
+        line-height: var(--text-line-height);
+    }
+}
