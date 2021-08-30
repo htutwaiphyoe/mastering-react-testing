@@ -368,4 +368,52 @@ img {
   right: -12rem;
 }
 
+.products__line {
+  line-height: 4rem;
+}
+.products__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 1.5rem;
+  padding-top: 3rem;
+}
+.products__card {
+  position: relative;
+  background-color: var(--container-color);
+  height: 132px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  display: grid;
+}
+.products__image {
+  width: 80px;
+  position: absolute;
+  inset: 0;
+  margin: 0 auto;
+  top: -3rem;
+}
+.products__content {
+  align-self: flex-end;
+}
+.products__title, .products__price {
+  font-size: var(--small-font-size);
+}
+.products__price {
+  font-weight: var(--font-semi-bold);
+}
+.products__button {
+  padding: 0.5rem;
+  border-radius: 0.35rem;
+  -webkit-border-radius: 0.35rem;
+  -moz-border-radius: 0.35rem;
+  -ms-border-radius: 0.35rem;
+  -o-border-radius: 0.35rem;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
