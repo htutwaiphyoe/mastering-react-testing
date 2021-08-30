@@ -319,7 +319,7 @@ img {
   width: 250px;
   position: absolute;
   top: 50%;
-  right: -45%;
+  right: -8rem;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
