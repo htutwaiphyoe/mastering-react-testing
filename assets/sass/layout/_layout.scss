@@ -12,6 +12,10 @@
             -webkit-background-clip: text;
             background-clip: text;
         }
+
+        @include responsive(319, 1) {
+            font-size: var(--big-font-size);
+        }
     }
 }
 
@@ -22,6 +26,14 @@
 .container {
     max-width: 968px;
     margin: 0 var(--mb-1-5) 0;
+
+    @include responsive(319, 1) {
+        margin: 0 var(--mb-1) 0;
+    }
+
+    @include responsive(1024, 0) {
+        margin: 0 auto;
+    }
 }
 
 .grid {

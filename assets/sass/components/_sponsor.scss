@@ -8,4 +8,10 @@
     &__img {
         width: 90px;
     }
+
+    @include responsive(1024, 0) {
+        &__img {
+            width: 100px;
+        }
+    }
 }

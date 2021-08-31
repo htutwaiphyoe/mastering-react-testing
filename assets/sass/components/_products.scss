@@ -46,4 +46,39 @@
         right: 0.5rem;
         bottom: 0.5rem;
     }
+
+    @include responsive(319, 1) {
+        &__container {
+            grid-template-columns: 142px;
+            justify-content: center;
+        }
+    }
+    @include responsive(460, 0) {
+        &__container {
+            grid-template-columns: repeat(2, 142px);
+            justify-content: center;
+        }
+    }
+    @include responsive(576, 0) {
+        &__container {
+            grid-template-columns: repeat(3, 142px);
+            justify-content: center;
+        }
+    }
+
+    @include responsive(768, 0) {
+        &__container {
+            grid-template-columns: repeat(3, 162px);
+            gap: 5rem 3rem;
+        }
+
+        &__card {
+            height: 152px;
+            padding: 1rem;
+        }
+
+        &__image {
+            width: 95px;
+        }
+    }
 }

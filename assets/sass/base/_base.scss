@@ -63,3 +63,9 @@ img {
         }
     }
 }
+
+@include responsive(768, 0) {
+    body {
+        margin: 0;
+    }
+}
