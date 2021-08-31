@@ -103,6 +103,26 @@ img {
   height: auto;
 }
 
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-thumb-color-alt);
+}
+
 .section {
   padding: 4rem 0 2rem;
 }
