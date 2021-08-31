@@ -16,8 +16,8 @@ Designed by Bedimcode
 
 ### Features
 
--   Best UI/UX
--   Dark interface.
--   With animations when scrolling.
--   Mobile First methodology
--   Compatible with all mobile devices (Responsive)
+-   Good UI/UX
+-   Scroll reveal
+-   Mobile First Approach
+-   Compatible with all mobile devices
+-   BEM Methodology
