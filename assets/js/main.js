@@ -4,10 +4,14 @@ const domSelectors = {
     navClose: "nav-close",
     navToggle: "nav-toggle",
     navLink: ".nav__link",
+    header: "header",
+    scrollUp: "scroll-up",
 };
 
 const classes = {
     showMenu: "show-menu",
+    scrollHeader: "scroll-header",
+    showScrollUp: "show-scrollup",
 };
 
 /*=============== SHOW MENU ===============*/
@@ -36,15 +40,30 @@ function hideMenu() {
 navLinks.forEach((link) => link.addEventListener("click", hideMenu));
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-
 function changeHeaderBackground() {
-    const header = document.getElementById("header");
-    if (window.scrollY > 50) header.classList.add("scroll-header");
-    else header.classList.remove("scroll-header");
+    const header = document.getElementById(domSelectors.header);
+    if (window.scrollY > 50) header.classList.add(classes.scrollHeader);
+    else header.classList.remove(classes.scrollHeader);
 }
 
 window.addEventListener("scroll", changeHeaderBackground);
+
 /*==================== SHOW SCROLL UP ====================*/
+const scrollUp = document.getElementById(domSelectors.scrollUp);
+
+const showScrollUp = () => {
+    if (this.scrollY > 50) scrollUp.classList.add(classes.showScrollUp);
+    else scrollUp.classList.remove(classes.showScrollUp);
+};
+
+window.addEventListener("scroll", showScrollUp);
+
+/*==================== MOVE TO TOP ====================*/
+const moveToTop = () => {
+    window.scrollTo(0, 0);
+};
+
+scrollUp.addEventListener("click", moveToTop);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
