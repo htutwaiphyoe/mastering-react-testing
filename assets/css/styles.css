@@ -813,6 +813,11 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color);
 }
+@media screen and (min-width: 576px) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__container {
     grid-template-columns: 0.2fr 0.5fr 0.5fr 1fr;

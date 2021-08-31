@@ -73,7 +73,11 @@
         font-size: var(--small-font-size);
         color: var(--text-color);
     }
-
+    @include responsive(576, 0) {
+        &__container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
     @include responsive(768, 0) {
         &__container {
             grid-template-columns: 0.2fr 0.5fr 0.5fr 1fr;
