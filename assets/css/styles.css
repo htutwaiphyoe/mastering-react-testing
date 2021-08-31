@@ -208,6 +208,13 @@ img {
   background-color: var(--body-color) !important;
 }
 
+.active-link {
+  background: var(--white-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .home__img {
   width: 250px;
   position: absolute;

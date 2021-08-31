@@ -6,6 +6,7 @@ const domSelectors = {
     navLink: ".nav__link",
     header: "header",
     scrollUp: "scroll-up",
+    sections: "section[id]",
 };
 
 const classes = {
@@ -66,5 +67,28 @@ const moveToTop = () => {
 scrollUp.addEventListener("click", moveToTop);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+// select all sections which have id
+const sections = document.querySelectorAll(domSelectors.sections);
+
+const showActiveLink = () => {
+    const currentScollY = window.scrollY;
+
+    sections.forEach((section) => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 50;
+        const sectionId = section.getAttribute("id");
+
+        if (currentScollY > sectionTop && currentScollY <= sectionHeight + sectionTop) {
+            document
+                .querySelector(`.nav__menu a[href="#${sectionId}"]`)
+                .classList.add("active-link");
+        } else {
+            document
+                .querySelector(`.nav__menu a[href="#${sectionId}"]`)
+                .classList.remove("active-link");
+        }
+    });
+};
+window.addEventListener("scroll", showActiveLink);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/

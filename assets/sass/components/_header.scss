@@ -66,11 +66,7 @@
             left: 0;
             width: 100%;
             padding: 4rem 0 3rem;
-            transition: 0.4s;
-            -webkit-transition: 0.4s;
-            -moz-transition: 0.4s;
-            -ms-transition: 0.4s;
-            -o-transition: 0.4s;
+            @include transition(0.4s);
         }
     }
 }
@@ -81,4 +77,11 @@
 
 .scroll-header {
     background-color: var(--body-color) !important;
+}
+
+.active-link {
+    background: var(--white-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
