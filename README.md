@@ -4,7 +4,7 @@
 
 [rtl-starter](https://codesandbox.io/s/rtl-starter-sq54b4)
 
-## 02. First Test
+## 02. Libraries
 
 @testing-library/react => uses ReactDOM to render components for testing
 
@@ -16,4 +16,4 @@ jest => run tests and reports results
 
 jsdom => simulate a browser for nodejs environment
 
-jest finds all files ending with .spec or .test or in __test__ folder and runs
+jest finds all files ending with .spec or .test or in \_\_test\_\_ folder and runs
