@@ -20,7 +20,7 @@ const formSchema = z.object({
   email: z.string().email({ message: "Email is invalid." }),
 });
 
-const UserForm = () => {
+const UserForm = ({ onSubmit }: UserFormProps) => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -29,13 +29,13 @@ const UserForm = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
-  };
-
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="p-5 space-y-8 border rounded-lg"
+      >
+        <h1 className="text-2xl font-bold">Add New User</h1>
         <FormField
           control={form.control}
           name="name"
