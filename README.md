@@ -17,3 +17,7 @@ jest => run tests and reports results
 jsdom => simulate a browser for nodejs environment
 
 jest finds all files ending with .spec or .test or in \_\_test\_\_ folder and runs
+
+## 03. Test
+
+test() global function
