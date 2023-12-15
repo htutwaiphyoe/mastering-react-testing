@@ -29,10 +29,12 @@ const UserForm = ({ onSubmit }: UserFormProps) => {
     },
   });
 
+  const handleSubmit = (values: z.infer<typeof formSchema>) => onSubmit(values);
+
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
+        onSubmit={form.handleSubmit(handleSubmit)}
         className="p-5 space-y-8 border rounded-lg"
       >
         <h1 className="text-2xl font-bold">Add New User</h1>

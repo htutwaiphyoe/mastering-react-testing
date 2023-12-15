@@ -46,7 +46,7 @@ heading => h1,h2,h3,h4,h5,h6
 list => ul,li
 button => button
 link => a
-textbox => input
+textbox => input default or type:text
 
 [html-aria](https://www.w3.org/TR/html-aria/#docconformance)
 
@@ -63,3 +63,24 @@ Jest Matchers => JS related, toHaveLength(), toEqual(), toContain(), toThrow(), 
 RTL Matchers => DOM related, toBeInTheDocument(), toBeEnabled(), toHaveClass(), toHaveTextContain(), toHaveValue()
 
 [custom-matchers](https://github.com/testing-library/jest-dom?tab=readme-ov-file#custom-matchers)
+
+## 06. Mock Functions
+
+knowing what to test + the best way to test
+
+getAllByRole => multiple elements
+getByRole => only one element, throw error if not found or multiple, use for exact one element
+
+user-event lib for user action
+
+click(), keyboard(), keyboard('{Enter}')
+
+jest can run specific test files
+
+mock => fake => does not do anything, get called with arguments
+
+mock function => jest.fn() => track number of calls and arguments
+
+[mock-function](https://jestjs.io/docs/mock-function-api)
+
+[react-hook-form-testing](https://react-hook-form.com/advanced-usage#TestingForm)
