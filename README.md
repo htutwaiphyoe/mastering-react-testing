@@ -33,3 +33,21 @@ element query => find elements that components rendered
 React Testing Library Query System => 48 functions
 
 [queries](https://testing-library.com/docs/queries/about)
+
+## 04. ARIA Role
+
+getAllByRole, getByRole => ARIA Role, the purpose of the element for disability and screen reader
+
+by default html tag assigned role automatically => implicit
+
+can assign role manually => explicit
+
+heading => h1,h2,h3,h4,h5,h6
+list => ul,li
+button => button
+link => a
+textbox => input
+
+[html-aria](https://www.w3.org/TR/html-aria/#docconformance)
+
+role is preferred way to find elements
