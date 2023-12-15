@@ -36,7 +36,7 @@ React Testing Library Query System => 48 functions
 
 ## 04. ARIA Role
 
-getAllByRole, getByRole => ARIA Role, the purpose of the element for disability and screen reader
+getAllByRole, getByRole => ARIA Role, the purpose of the element for disability with vision and screen reader
 
 by default html tag assigned role automatically => implicit
 
@@ -51,3 +51,15 @@ textbox => input
 [html-aria](https://www.w3.org/TR/html-aria/#docconformance)
 
 role is preferred way to find elements
+
+## 05. Jest Matchers
+
+expect() with matchers (Jest + RTL) for assertion
+
+Jest Matchers => JS related, toHaveLength(), toEqual(), toContain(), toThrow(), toHaveBeenCalled()
+
+[expect](https://jestjs.io/docs/expect)
+
+RTL Matchers => DOM related, toBeInTheDocument(), toBeEnabled(), toHaveClass(), toHaveTextContain(), toHaveValue()
+
+[custom-matchers](https://github.com/testing-library/jest-dom?tab=readme-ov-file#custom-matchers)
