@@ -21,3 +21,15 @@ jest finds all files ending with .spec or .test or in \_\_test\_\_ folder and ru
 ## 03. Test
 
 test() global function
+
+[vite-react-typescript-jest-setup](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap)
+
+jsdom creates fake browser environment in nodejs env when render function call
+
+screen object access elements in the fake dom
+
+element query => find elements that components rendered
+
+React Testing Library Query System => 48 functions
+
+[queries](https://testing-library.com/docs/queries/about)
