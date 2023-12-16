@@ -17,7 +17,7 @@ const UserTable = ({ list }: UserTableProps) => {
           <TableHead>Email</TableHead>
         </TableRow>
       </TableHeader>
-      <TableBody>
+      <TableBody data-testid="users">
         {list.map((item, index) => (
           <TableRow key={index}>
             <TableCell className="font-medium">{index + 1}</TableCell>

@@ -1,5 +1,5 @@
 import UserTable from "@/components/UserTable";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 
 test("shows one row per user", () => {
   const users = [
@@ -8,7 +8,7 @@ test("shows one row per user", () => {
   ];
   render(<UserTable list={users} />);
 
-  const rows = screen.getAllByRole("row");
+  const rows = within(screen.getByTestId("users")).getAllByRole("row");
 
-  expect(rows).toHaveLength(3);
+  expect(rows).toHaveLength(2);
 });

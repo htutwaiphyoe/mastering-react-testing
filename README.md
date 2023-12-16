@@ -90,3 +90,20 @@ mock function => jest.fn() => track number of calls and arguments
 screen.logTestingPlaygroundURL() => open playground link
 
 to know how to find proper query functions by selecting dom element in playground
+
+## 08. Query Function Escape Hatches
+
+thead, tbody => rowgroup
+tr => row
+th => columnheader
+td => cell
+
+role cannot be good for every query, so use fallbacks => data-testid, container.querySelector()
+
+data-testid => identifier for element => within(screen.getByTestId(id)) => not the best idea
+
+render() returns an object which contains container which is a dom reference of the component wrapped by a div
+
+container.querySelector() => direct access
+
+[render](https://testing-library.com/docs/react-testing-library/api#render-options)
