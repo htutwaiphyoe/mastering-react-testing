@@ -29,7 +29,10 @@ const UserForm = ({ onSubmit }: UserFormProps) => {
     },
   });
 
-  const handleSubmit = (values: z.infer<typeof formSchema>) => onSubmit(values);
+  const handleSubmit = (values: z.infer<typeof formSchema>) => {
+    onSubmit(values);
+    form.reset();
+  };
 
   return (
     <Form {...form}>

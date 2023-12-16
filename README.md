@@ -111,3 +111,5 @@ container.querySelector() => direct access
 ## 09. beforeEach
 
 avoid beforeEach for rendering components
+
+[screen.debug()](https://testing-library.com/docs/dom-testing-library/api-debugging#screendebug)

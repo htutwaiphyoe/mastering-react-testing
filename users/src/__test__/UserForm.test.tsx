@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import UserForm from "@/components/UserForm";
-import user from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event";
 
 test("shows two inputs and one button", () => {
   render(<UserForm onSubmit={() => {}} />);
@@ -20,10 +20,10 @@ test("calls onSubmit when form is submitted", async () => {
   render(<UserForm onSubmit={onSubmit} />);
 
   const nameInput = screen.getByRole("textbox", { name: /name/i });
-  await user.type(nameInput, data.name);
+  await userEvent.type(nameInput, data.name);
 
   const emailInput = screen.getByRole("textbox", { name: /email/i });
-  await user.type(emailInput, data.email);
+  await userEvent.type(emailInput, data.email);
 
   const button = screen.getByRole("button");
   await waitFor(() => fireEvent.submit(button));
@@ -31,4 +31,6 @@ test("calls onSubmit when form is submitted", async () => {
   expect(onSubmit).toHaveBeenCalled();
   expect(onSubmit).toHaveBeenCalledTimes(1);
   expect(onSubmit).toHaveBeenCalledWith(data);
+  await waitFor(() => expect(nameInput).toHaveValue(""));
+  await waitFor(() => expect(emailInput).toHaveValue(""));
 });
