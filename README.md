@@ -112,4 +112,14 @@ container.querySelector() => direct access
 
 avoid beforeEach for rendering components
 
+[beforeeachfn](https://jestjs.io/docs/api#beforeeachfn-timeout)
+
 [screen.debug()](https://testing-library.com/docs/dom-testing-library/api-debugging#screendebug)
+
+[user-event vs fireEvent](https://testing-library.com/docs/user-event/intro/#:~:text=fireEvent%20dispatches%20DOM%20events%2C%20whereas,additional%20checks%20along%20the%20way.)
+
+## 10. React Testing Library Book
+
+npx rtl-book serve fileName.ts
+
+RTL Book for cheat sheet
