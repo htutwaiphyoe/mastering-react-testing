@@ -84,3 +84,9 @@ mock function => jest.fn() => track number of calls and arguments
 [mock-function](https://jestjs.io/docs/mock-function-api)
 
 [react-hook-form-testing](https://react-hook-form.com/advanced-usage#TestingForm)
+
+## 07. Testing Playground
+
+screen.logTestingPlaygroundURL() => open playground link
+
+to know how to find proper query functions by selecting dom element in playground
