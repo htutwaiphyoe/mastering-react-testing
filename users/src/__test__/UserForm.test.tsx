@@ -14,7 +14,7 @@ test("shows two inputs and one button", () => {
 });
 
 test("calls onSubmit when form is submitted", async () => {
-  const data = { name: "htut wai phyoe", email: "hwpasdf@gmail.com" };
+  const data = { name: "Maii", email: "maii@gmail.com" };
 
   const onSubmit = jest.fn();
   render(<UserForm onSubmit={onSubmit} />);
