@@ -107,3 +107,7 @@ render() returns an object which contains container which is a dom reference of 
 container.querySelector() => direct access
 
 [render](https://testing-library.com/docs/react-testing-library/api#render-options)
+
+## 09. beforeEach
+
+avoid beforeEach for rendering components
