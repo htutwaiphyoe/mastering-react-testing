@@ -156,3 +156,7 @@ for accessible name of input, use label tag and link with input id and label htm
 ```js
 const emailInput = screen.getByRole('textbox', {  name: /email/i });
 ```
+
+## 14. Direct Accessible Names
+
+void element or element without text content, use `aria-label` to give accessible names.
