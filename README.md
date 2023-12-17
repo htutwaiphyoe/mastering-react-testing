@@ -146,3 +146,13 @@ text content within the element
 ```js
 screen.getByRole('button', { name: /sign in/i });
 ```
+
+## 13. Accessible Input with Label
+
+Self-closing elements (also known as 'void elements') like `input`, `img`, and `br` cannot contain text content.
+
+for accessible name of input, use label tag and link with input id and label htmlFor. Label text content will be accessible name of input.
+
+```js
+const emailInput = screen.getByRole('textbox', {  name: /email/i });
+```
