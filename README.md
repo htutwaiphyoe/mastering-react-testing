@@ -123,3 +123,18 @@ avoid beforeEach for rendering components
 npx rtl-book serve fileName.ts
 
 RTL Book for cheat sheet
+
+## 11. Element Role
+
+a => link
+button => button
+footer => contentinfo
+h1 => heading
+header => banner
+img => img
+input:type=checkbox => checkbox
+input:type=number => spinbutton
+input:type=radio => radio
+input:type=text => textbox
+li => listitem
+ul => list
