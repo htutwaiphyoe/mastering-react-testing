@@ -124,7 +124,7 @@ npx rtl-book serve fileName.ts
 
 RTL Book for cheat sheet
 
-## 11. Element Role
+## 11. Element Roles
 
 a => link
 button => button
@@ -138,3 +138,11 @@ input:type=radio => radio
 input:type=text => textbox
 li => listitem
 ul => list
+
+## 12. Accessible Names
+
+text content within the element
+
+```js
+screen.getByRole('button', { name: /sign in/i });
+```
