@@ -203,5 +203,11 @@ These names indicate the following:
 | Goal of test                           | Use                 |
 |----------------------------------------|---------------------|
 | Prove an element exists                | getBy, getAllBy     |
-| Prove an element does **not** exist        | queryBy, queryAllBy |
+| Prove an element does **not** exist    | queryBy, queryAllBy |
 | Make sure an element eventually exists | findBy, findAllBy   |
+
+## 16. getBy, queryBy, findBy, getAllBy, queryAllBy, findAllBy
+
+[queries](https://testing-library.com/docs/queries/about)
+
+findBy, findAllBy  => promise resolve/reject => default 1s => use for data fetching or asynchronous
