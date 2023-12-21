@@ -255,3 +255,14 @@ Most of testing is about figuring out other engineers' code
 Testing in dream => write code => write test immediately => super easy
 
 Testing in reality => bug report to support team => support team creates tickets and report to PM => PM request to the engineering team => engineers  fix the bug and write tests
+
+## 20. Module mocks, Navigation, Act
+
+Library code needs library config for testing
+
+act() warning => data fetching in useEffect()
+
+1. `unexpected state updates` in test are bad => test before state update => need to wait state update/asynchronous
+2. `Act` function defines a window in time where state update occur => state update will happen in act function => act function from `react-dom` without RTL
+3. RTL uses `act` function automatically => screen.findBy, screen.findAllBy, waitFor, user.keyboard, user.click
+4. don't follow warnings message, use findBy
