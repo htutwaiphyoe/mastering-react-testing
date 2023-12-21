@@ -1,10 +1,6 @@
-import { render } from "@testing-library/react";
+import { render, act } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import RepositoriesListItem from "../components/repositories/RepositoriesListItem";
-
-jest.mock("../components/tree/FileIcon.js", () => {
-  return () => "File Icon";
-});
 
 const renderComponent = () => {
   const repository = {
@@ -27,4 +23,7 @@ const renderComponent = () => {
 
 test("shows github repo link", async () => {
   renderComponent();
+  await act(async () => await pause());
 });
+
+const pause = () => new Promise((resolve) => setTimeout(resolve, 100));
