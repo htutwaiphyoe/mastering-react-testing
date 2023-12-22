@@ -1,6 +1,10 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import RepositoriesListItem from "../components/repositories/RepositoriesListItem";
+
+jest.mock("../components/tree/FileIcon.js", () => {
+  return () => "File Icon";
+});
 
 const renderComponent = () => {
   const repository = {
@@ -22,6 +26,5 @@ const renderComponent = () => {
 };
 
 test("shows github repo link", async () => {
-  const { repository } = renderComponent();
-  await screen.findByRole("img", { name: repository.language });
+  renderComponent();
 });

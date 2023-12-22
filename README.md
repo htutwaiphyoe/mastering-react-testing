@@ -266,3 +266,14 @@ act() warning => data fetching in useEffect()
 2. `Act` function defines a window in time where state update occur => state update will happen in act function => act function from `react-dom` without RTL
 3. RTL uses `act` function automatically => screen.findBy, screen.findAllBy, waitFor, user.keyboard, user.click
 4. don't follow warnings message, use findBy
+
+options to solve `act` warnings, from best to worst
+
+1. use `findBy` or `findAllBy`
+2. use `act` function
+3. use `module mock` to avoid rendering
+4. use `act` as a pause
+
+jest.mock(filePath, callback) => fake contents of a file
+
+[mock-function](https://jestjs.io/docs/mock-function-api)
