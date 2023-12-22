@@ -5,9 +5,9 @@ import RepositoriesListItem from "../components/repositories/RepositoriesListIte
 const renderComponent = () => {
   const repository = {
     full_name: "facebook/react",
-    language: "JavaScript",
+    language: "Typescript",
     description: "A library for building user interface",
-    owner: "facebook",
+    owner: { login: "facebook" },
     name: "react",
     html_url: "https://github.com/facebook/react",
   };
@@ -27,4 +27,10 @@ test("shows github repo link", async () => {
 
   const link = screen.getByRole("link", { name: "github" });
   expect(link).toHaveAttribute("href", repository.html_url);
+});
+
+test("shows correct language icon", async () => {
+  const { repository } = renderComponent();
+  const icon = await screen.findByRole("img", { name: repository.language });
+  expect(icon).toHaveClass("ts-icon");
 });
