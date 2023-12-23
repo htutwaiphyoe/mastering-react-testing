@@ -279,3 +279,5 @@ jest.mock(filePath, callback) => fake contents of a file
 [mock-function](https://jestjs.io/docs/mock-function-api)
 
 `act` => original react-dom => RTL import, modify and export
+
+toHaveAttribute(attribute, value), toHaveClass(className)

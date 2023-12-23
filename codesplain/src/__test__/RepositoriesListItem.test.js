@@ -34,3 +34,14 @@ test("shows correct language icon", async () => {
   const icon = await screen.findByRole("img", { name: repository.language });
   expect(icon).toHaveClass("ts-icon");
 });
+
+test("shows correct editor link", async () => {
+  const { repository } = renderComponent();
+  await screen.findByRole("img", { name: repository.language });
+
+  const link = screen.getByRole("link", {
+    name: new RegExp(repository.owner.login),
+  });
+
+  expect(link).toHaveAttribute("href", `/repositories/${repository.full_name}`);
+});
