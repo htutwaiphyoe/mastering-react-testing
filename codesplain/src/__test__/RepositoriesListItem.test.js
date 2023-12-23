@@ -1,4 +1,4 @@
-import { render, act } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import RepositoriesListItem from "../components/repositories/RepositoriesListItem";
 
@@ -22,8 +22,9 @@ const renderComponent = () => {
 };
 
 test("shows github repo link", async () => {
-  renderComponent();
-  await act(async () => await pause());
-});
+  const { repository } = renderComponent();
+  await screen.findByRole("img", { name: repository.language });
 
-const pause = () => new Promise((resolve) => setTimeout(resolve, 100));
+  const link = screen.getByRole("link", { name: "github" });
+  expect(link).toHaveAttribute("href", repository.html_url);
+});
