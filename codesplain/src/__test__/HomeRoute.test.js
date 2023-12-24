@@ -1,30 +1,19 @@
 import { render, screen } from "@testing-library/react";
-import { rest } from "msw";
-import { setupServer } from "msw/node";
 import { MemoryRouter } from "react-router-dom";
 import HomeRoute from "../routes/HomeRoute";
+import { createServer } from "../configs/server";
 
-const handlers = [
-  rest.get("/api/repositories", (req, res, ctx) => {
-    const query = req.url.searchParams.get("q");
-    const language = query.split("language:")[1];
-    return res(ctx.json({ items: [{ id: "1", full_name: language }] }));
-  }),
-];
-
-const server = setupServer(...handlers);
-
-beforeAll(() => {
-  server.listen();
-});
-
-afterEach(() => {
-  server.resetHandlers();
-});
-
-afterAll(() => {
-  server.close();
-});
+createServer([
+  {
+    path: "/api/repositories",
+    method: "get",
+    res: (req) => {
+      const query = req.url.searchParams.get("q");
+      const language = query.split("language:")[1];
+      return { items: [{ id: language, full_name: language }] };
+    },
+  },
+]);
 
 test("shows links of the popular languages", async () => {
   render(

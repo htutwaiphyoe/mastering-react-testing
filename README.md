@@ -288,3 +288,4 @@ don't make actual network request, due to slow and data changes in testing envir
 
 1. Mock file with data fetching code
 2. use msw (mock service worker) library to mock axios => intercept the request and return fake data
+3. create manual mock for axios
