@@ -289,3 +289,18 @@ don't make actual network request, due to slow and data changes in testing envir
 1. Mock file with data fetching code
 2. use msw (mock service worker) library to mock axios => intercept the request and return fake data
 3. create manual mock for axios
+
+## 22. Authentication
+
+jest runs top-level codes first and then test code.
+
+test nesting => describe() => groups together several related tests => beforeAll, afterAll related to describe block scope
+
+[describe](https://jestjs.io/docs/api#describename-fn)
+
+debugging
+
+1. use test.only or describe.only to limit the number of tests executed => skip other tests
+2. use debugger => script => `react-scripts --inspect-brk test --runInBand --no-cache`, chrome => about:inspect
+
+cache can be problem for testing
