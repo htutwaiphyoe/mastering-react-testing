@@ -281,3 +281,10 @@ jest.mock(filePath, callback) => fake contents of a file
 `act` => original react-dom => RTL import, modify and export
 
 toHaveAttribute(attribute, value), toHaveClass(className)
+
+## 21. Data Fetching
+
+don't make actual network request, due to slow and data changes in testing environment, mock them
+
+1. Mock file with data fetching code
+2. use msw (mock service worker) library to mock axios => intercept the request and return fake data
