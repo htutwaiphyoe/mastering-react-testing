@@ -32,3 +32,9 @@ don't test styles (visual tests)
 test component behavior, not styles
 
 Greet.test.tsx
+
+simplifying setup
+
+vitest.config.ts => globals: true, setupFiles: 'filepaths'
+
+tsconfig => "types": ["vitest/globals"]
