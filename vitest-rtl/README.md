@@ -38,3 +38,5 @@ simplifying setup
 vitest.config.ts => globals: true, setupFiles: 'filepaths'
 
 tsconfig => "types": ["vitest/globals"]
+
+treat components as black box
