@@ -40,3 +40,9 @@ vitest.config.ts => globals: true, setupFiles: 'filepaths'
 tsconfig => "types": ["vitest/globals"]
 
 treat components as black box
+
+testing list
+
+testing user interactions => use user-events library instead of fireEvents
+
+user event is asynchronous, so make async/await function
