@@ -56,3 +56,5 @@ matchMedia => window property does not have in jsdom env => add in setup file
 [https://github.com/vitest-dev/vitest/issues/821](https://github.com/vitest-dev/vitest/issues/821)
 
 [https://typescript-eslint.io/](https://typescript-eslint.io/)
+
+[https://github.com/testing-library/user-event/discussions/1087](https://github.com/testing-library/user-event/discussions/1087)
