@@ -58,3 +58,7 @@ matchMedia => window property does not have in jsdom env => add in setup file
 [https://typescript-eslint.io/](https://typescript-eslint.io/)
 
 [https://github.com/testing-library/user-event/discussions/1087](https://github.com/testing-library/user-event/discussions/1087)
+
+never use live BE => due to network is slow and if server down, tests will fail => always mock BE api
+
+[mock service worker](https://mswjs.io/)
